@@ -12,7 +12,7 @@ public class TC_FlipcartloginPage extends Baseclass {
 	{
 		
 		FlipcartLoginPage login=new FlipcartLoginPage(driver);
-		
+		// Login Details
 		//login.Login();
 		Thread.sleep(4000);
 		login.setEmail(excel.getstringData("Sheet1", 1, 0));
