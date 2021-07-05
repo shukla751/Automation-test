@@ -33,7 +33,7 @@ public class Baseclass {
 		excel = new ExcelDataprovider();
 		config =new ConfigDataprovider();
 		
-		ExtentHtmlReporter extent=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/Examroom  ")+Helper.getCurrentDateTime()+".html");
+		ExtentHtmlReporter extent=new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/Flipcart_")+Helper.getCurrentDateTime()+".html");
 		report=new ExtentReports();
 		report.attachReporter(extent);
 	}
@@ -51,11 +51,11 @@ public class Baseclass {
 		driver.get(config.getURL());
 	}
 	
-	/*@AfterClass
+	@AfterClass
 	public void teardown()
 	{
 		driver.quit();
-	}*/
+	}
 	
 	@AfterMethod
 	public void teardownmethod(ITestResult result)

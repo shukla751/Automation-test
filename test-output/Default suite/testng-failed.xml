@@ -6,6 +6,7 @@
       <class name="Com.Testcases.TC_FlipcartloginPage">
         <methods>
           <include name="logintest"/>
+          <include name="teardown"/>
           <include name="setup"/>
           <include name="setupsuit"/>
           <include name="teardownmethod"/>

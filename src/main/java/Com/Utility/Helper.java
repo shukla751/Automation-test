@@ -17,7 +17,7 @@ public class Helper {
 	{
 		File src =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileHandler.copy(src, new File("./Screenshot/Examroom_ "+getCurrentDateTime()+"jpg"));
+			FileHandler.copy(src, new File("./Screenshot/Flipcart_"+getCurrentDateTime()+"jpg"));
 			
 		}
 		catch(IOException e)

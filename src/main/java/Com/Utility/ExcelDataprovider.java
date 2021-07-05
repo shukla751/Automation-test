@@ -25,6 +25,19 @@ public class ExcelDataprovider {
 	public String getstringData(String SheetName,int row,int column)
 	{
 		return wb.getSheet(SheetName).getRow(row).getCell(column).getStringCellValue();
+		
+		
 	}
+	
+	public double getstringDatanumber(String SheetName,int row,int column)
+	{
+		return wb.getSheet(SheetName).getRow(row).getCell(column).getNumericCellValue();
+		
+		
+	}
+	
+	
+	
+
 
 }
